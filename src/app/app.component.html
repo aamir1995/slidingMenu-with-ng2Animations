@@ -1,3 +1,10 @@
+<button (click)="toggleMenu()" class="hamburger">
+  <span>toggle menu</span>
+</button>
+
 <h1>
   {{title}}
 </h1>
+<a href="http://blog.thecodecampus.de/angular-2-animate-creating-sliding-side-navigation/">From the blog of thecodecampus.</a>
+
+<app-menu [@slideInOut]="menuState"></app-menu>
